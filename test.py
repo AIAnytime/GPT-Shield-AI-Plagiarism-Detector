@@ -10,6 +10,8 @@ from collections import Counter
 from nltk.corpus import stopwords
 import string
 
+nltk.download('punckt')
+nltk.download('stopwords')
 # Load GPT-2 tokenizer and model
 tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
 model = GPT2LMHeadModel.from_pretrained('gpt2')
